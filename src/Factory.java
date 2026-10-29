@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Factory {
     //instance variables
     //only use public for instance variables
@@ -9,7 +11,8 @@ public class Factory {
     public Donuts DonutOrder2;
     //todo:make a new donut called donutsOrder2. Only do the monopoly box creation, dont use constuctor
 
-
+    public int randomNumber;
+    public int randomNumber2;
 
     //todo: make 2 more variables called isOpen and yearFounded
     //What data type do we need? Give the variable values
@@ -27,9 +30,9 @@ public class Factory {
         System.out.println("Welcome to Michael's factory!");
         System.out.println("The factory was founded in "+yearFounded);
         System.out.println("It is "+ isOpen+ " that the factory is open ");
-
+        randomNumber = (int)(Math.random()*100)+1;   //1-100 donuts
         //make an object of type Donuts
-        DonutOrder1 = new Donuts();
+        DonutOrder1 = new Donuts(randomNumber);
         System.out.println(DonutOrder1.numberOfDonuts);
         //todo: print all of the instance variables as donuts
 
@@ -39,9 +42,13 @@ public class Factory {
         System.out.println(DonutOrder1.numberOfDonuts);
 
 
-        DonutOrder2= new Donuts();
+        randomNumber2 = (int)(Math.random()*45)+1;
+
+
+        DonutOrder2= new Donuts(randomNumber2);
         DonutOrder2.numberOfDonuts= DonutOrder1.numberOfDonuts*2;
         System.out.println(DonutOrder2.numberOfDonuts+ " Boston Creme Donuts");
+        DonutOrder2.printInfo();
 
 
 

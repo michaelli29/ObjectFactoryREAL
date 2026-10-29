@@ -16,13 +16,27 @@ public class Donuts {
     //has to match the name of class exactly
 
 
-    public Donuts(){
+    public Donuts(int pNumberOfDonuts){
         frostingType="Boston Creme";
         hasFilling=true;
-        numberOfDonuts=3;
+        numberOfDonuts=pNumberOfDonuts;
 
 
 
     }//end of donut constructor
+    //todo: make a method called printInfo
+    public void printInfo(){
+        //todo:use SOUT to print the instance variables
+        System.out.println("The frosting type of this donut is "+frostingType);
+        System.out.println("It is "+hasFilling+" that this donuts has a filling");
+        System.out.println("There are "+numberOfDonuts+" donuts in this order");
 
-}
+
+
+    }//end of printInfo
+
+
+
+
+
+}//end of donut class
