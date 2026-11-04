@@ -9,7 +9,7 @@ public class Pizza {
         numberofPizzas = 1;
 
     }//end of pizza constructor
-
+    
 
     public void printInfo(){
         System.out.println("Pizza has toppings: " + hasToppings);
