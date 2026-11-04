@@ -39,6 +39,18 @@ public class Donuts {
 
     }//end of printInfo
 
+    public void addDonuts() {
+        //numberofDonuts
+        numberOfDonuts++;
+
+    }//end of addDonuts
+
+    public void changeFrostingType(String pFrostingType) {
+        frostingType = pFrostingType;
+    }
+
+
+
 
 
 
