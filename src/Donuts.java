@@ -16,10 +16,14 @@ public class Donuts {
     //has to match the name of class exactly
 
 
-    public Donuts(int pNumberOfDonuts){
+    public Donuts(int pNumberOfDonuts, Boolean pHasFilling, String pfrostingType) {
         frostingType="Boston Creme";
-        hasFilling=true;
         numberOfDonuts=pNumberOfDonuts;
+        frostingType=pfrostingType;
+        hasFilling=pHasFilling;
+  ;
+
+
 
 
 

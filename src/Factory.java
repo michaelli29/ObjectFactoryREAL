@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Factory {
     //instance variables
     //only use public for instance variables
@@ -7,6 +5,7 @@ public class Factory {
     public int yearFounded = 2026;
     public boolean isOpen = true;
     public Donuts DonutOrder1;
+    public Burgers BurgerOrder1;
 
     public Donuts DonutOrder2;
     //todo:make a new donut called donutsOrder2. Only do the monopoly box creation, dont use constuctor
@@ -32,7 +31,7 @@ public class Factory {
         System.out.println("It is "+ isOpen+ " that the factory is open ");
         randomNumber = (int)(Math.random()*100)+1;   //1-100 donuts
         //make an object of type Donuts
-        DonutOrder1 = new Donuts(randomNumber);
+        DonutOrder1 = new Donuts(randomNumber, true,"Boston Creme");
         System.out.println(DonutOrder1.numberOfDonuts);
         //todo: print all of the instance variables as donuts
 
@@ -45,14 +44,15 @@ public class Factory {
         randomNumber2 = (int)(Math.random()*45)+1;
 
 
-        DonutOrder2= new Donuts(randomNumber2);
+        DonutOrder2= new Donuts(randomNumber2, true,"glazed" );
         DonutOrder2.numberOfDonuts= DonutOrder1.numberOfDonuts*2;
         System.out.println(DonutOrder2.numberOfDonuts+ " Boston Creme Donuts");
         DonutOrder2.printInfo();
 
 
 
-
+        BurgerOrder1=new Burgers();
+        BurgerOrder1.printInfo();
 
 
 
