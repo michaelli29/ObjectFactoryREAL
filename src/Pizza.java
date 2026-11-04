@@ -10,13 +10,6 @@ public class Pizza {
 
     }//end of pizza constructor
 
-    //todo: add the instance variable you made to the top of the class
-
-    //todo: make a constructor that gives the instance variables default variables. No variables
-
-    //todo: make a printInfo method
-
-    //todo: in printInfo, print the instance variables in a readable way
 
     public void printInfo(){
         System.out.println("Pizza has toppings: " + hasToppings);

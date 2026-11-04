@@ -46,14 +46,17 @@ public class Factory {
 
         DonutOrder2= new Donuts(randomNumber2, true,"glazed" );
         DonutOrder2.numberOfDonuts= DonutOrder1.numberOfDonuts*2;
-        System.out.println(DonutOrder2.numberOfDonuts+ " Boston Creme Donuts");
+        System.out.println("There are"+DonutOrder2.numberOfDonuts+ " Boston Creme Donuts in this order");
         DonutOrder2.addDonuts();
+        DonutOrder2.changeFrostingType("Jelly");
         DonutOrder2.printInfo();
 
 
 
         BurgerOrder1=new Burgers();
         BurgerOrder1.printInfo();
+
+
 
 
 

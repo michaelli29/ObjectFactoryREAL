@@ -8,8 +8,6 @@ public class Donuts {
     public boolean hasFilling;
     //number of donuts
     public int numberOfDonuts;
-
-
     //constructor
     //method - special
     //We don't write void
@@ -21,10 +19,6 @@ public class Donuts {
         numberOfDonuts=pNumberOfDonuts;
         frostingType=pfrostingType;
         hasFilling=pHasFilling;
-  ;
-
-
-
 
 
     }//end of donut constructor
@@ -36,7 +30,6 @@ public class Donuts {
         System.out.println("There are "+numberOfDonuts+" donuts in this order");
 
 
-
     }//end of printInfo
 
     public void addDonuts() {
@@ -45,8 +38,9 @@ public class Donuts {
 
     }//end of addDonuts
 
-    public void changeFrostingType(String pFrostingType) {
-        frostingType = pFrostingType;
+    public void changeFrostingType(String newFrostingType) {
+        frostingType = newFrostingType;
+
     }
 
 
