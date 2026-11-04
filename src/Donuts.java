@@ -10,6 +10,8 @@ public class Donuts {
     public int numberOfDonuts;
 
 
+
+
     //constructor
     //method - special
     //We don't write void
@@ -21,6 +23,8 @@ public class Donuts {
         numberOfDonuts=pNumberOfDonuts;
         frostingType=pfrostingType;
         hasFilling=pHasFilling;
+
+
   ;
 
 
@@ -38,6 +42,16 @@ public class Donuts {
 
 
     }//end of printInfo
+
+    public void addDonuts() {
+        //numberofDonuts
+        numberOfDonuts++;
+
+    }//end of addDonuts
+
+    public void changeFrostingType(String newFrostingType) {
+        
+    }
 
 
 
